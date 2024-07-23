@@ -1,0 +1,6 @@
+artifact_location: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/369273561661744131
+creation_time: 1721738891404
+experiment_id: '369273561661744131'
+last_update_time: 1721738891404
+lifecycle_stage: active
+name: bike-sharing-prediction-experiment
