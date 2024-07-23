@@ -18,7 +18,7 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
      - `processed/`: Contains the cleaned and preprocessed data ready for analysis and model training.
 - The `notebooks` folder contains Jupyter notebooks used for exploratory data analysis (EDA), feature engineering, and initial model experimentation.
 - The `models` folder stores the trained machine learning models and any related artifacts.
-- The `scr` folder contains the source code for the project.
+- The `src` folder contains the source code for the project.
 
 ## Additional files
 - **requirements.txt**
