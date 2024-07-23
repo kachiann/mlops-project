@@ -40,7 +40,7 @@ def save_data(df, filepath):
 
 def main():
     # Load raw data
-    raw_data_path = '/Users/kachiemenike/My Documents/Personal/mlops-project/data/raw/hour.csv'
+    raw_data_path = '../data/raw/hour.csv'
     df = load_data(raw_data_path)
     
     # Clean data
@@ -50,7 +50,7 @@ def main():
     df = feature_engineering(df)
     
     # Save processed data
-    processed_data_path = '/Users/kachiemenike/My Documents/Personal/mlops-project/data/processed/train_bike_sharing_data_processed.csv'
+    processed_data_path = '../data/processed/train_bike_sharing_data_processed.csv'
     save_data(df, processed_data_path)
     
     print("Data processing completed successfully.")
