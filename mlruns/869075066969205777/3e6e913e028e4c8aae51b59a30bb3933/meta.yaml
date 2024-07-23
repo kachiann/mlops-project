@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/3e6e913e028e4c8aae51b59a30bb3933/artifacts
+end_time: 1721771880272
+entry_point_name: ''
+experiment_id: '869075066969205777'
+lifecycle_stage: active
+run_id: 3e6e913e028e4c8aae51b59a30bb3933
+run_name: efficient-doe-767
+run_uuid: 3e6e913e028e4c8aae51b59a30bb3933
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721771870358
+status: 3
+tags: []
+user_id: kachiemenike

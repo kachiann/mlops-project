@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/82937b77a9ea4f4397f2adc62ec99fb3/artifacts
+end_time: 1721771573352
+entry_point_name: ''
+experiment_id: '869075066969205777'
+lifecycle_stage: active
+run_id: 82937b77a9ea4f4397f2adc62ec99fb3
+run_name: clumsy-fish-111
+run_uuid: 82937b77a9ea4f4397f2adc62ec99fb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721771563747
+status: 3
+tags: []
+user_id: kachiemenike
