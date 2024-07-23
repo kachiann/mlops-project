@@ -1,2 +1,4 @@
 *.pkl filter=lfs diff=lfs merge=lfs -text
 *.joblib filter=lfs diff=lfs merge=lfs -text
+mlruns/869075066969205777/e5d459e96b534906a726461b9fc5cee5/artifacts/model/model.pkl filter=lfs diff=lfs merge=lfs -text
+models/bike_sharing_model_20240723_131804.joblib filter=lfs diff=lfs merge=lfs -text
