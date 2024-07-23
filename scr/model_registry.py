@@ -12,7 +12,7 @@ def get_current_model_parameters():
     Get the current parameters of a registered model in production.
     """
     client = MlflowClient(tracking_uri=MLFLOW_TRACKING_URI)
-    current_accuracy = 0
+    current_score = 0
     run_id_current = None
 
     for model_version in client.search_model_versions("name='bike-sharing-model'"):
@@ -20,12 +20,12 @@ def get_current_model_parameters():
             prod_model = model_version
             run_id_current = prod_model.run_id
             current_run = client.get_run(run_id=run_id_current)
-            current_accuracy = current_run.data.metrics["r2"]
+            current_score = current_run.data.metrics["r2"]
             break
 
     print(f"run_id_current={run_id_current}")
-    print(f"current accuracy = {current_accuracy}")
-    return run_id_current, current_accuracy
+    print(f"current accuracy = {current_score}")
+    return run_id_current, current_score
 
 def get_best_model_parameters():
     """
@@ -39,10 +39,10 @@ def get_best_model_parameters():
     )[0]
 
     best_run_id = best_run.info.run_id
-    best_accuracy = best_run.data.metrics["r2"]
+    best_score = best_run.data.metrics["r2"]
     
     print(f"best_run_id={best_run_id}")
-    print(f"best accuracy = {best_accuracy}")
+    print(f"best score = {best_score}")
 
     version = None
     for model_version in client.search_model_versions("name='bike-sharing-model'"):
@@ -50,7 +50,7 @@ def get_best_model_parameters():
             version = model_version.version
             break
 
-    return best_run_id, best_accuracy, version
+    return best_run_id, best_score, version
 
 if __name__ == '__main__':
     client = MlflowClient(tracking_uri=MLFLOW_TRACKING_URI)
@@ -58,10 +58,10 @@ if __name__ == '__main__':
     new_stage = "Production"
     model_name = "bike-sharing-model"
 
-    run_id_current, current_accuracy = get_current_model_parameters()
-    best_run_id, best_accuracy, version = get_best_model_parameters()
+    run_id_current, current_score = get_current_model_parameters()
+    best_run_id, best_score, version = get_best_model_parameters()
 
-    if best_accuracy > current_accuracy:
+    if best_score > current_score:
         client.transition_model_version_stage(
             name=model_name,
             version=version, 
