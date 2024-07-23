@@ -54,7 +54,7 @@ def save_model(model, filepath):
 
 def main():
     # Load data
-    data_path = '/Users/kachiemenike/My Documents/Personal/mlops-project/data/processed/train_bike_sharing_data_processed.csv'
+    data_path = '../data/processed/train_bike_sharing_data_processed.csv'
     df = load_data(data_path)
     
     # Preprocess data
@@ -83,7 +83,7 @@ def main():
         mlflow.sklearn.log_model(model, "model")
         
         # Save model locally
-        model_path = f'/Users/kachiemenike/My Documents/Personal/mlops-project/models/bike_sharing_model_{datetime.now().strftime("%Y%m%d_%H%M%S")}.joblib'
+        model_path = f'../models/bike_sharing_model_{datetime.now().strftime("%Y%m%d_%H%M%S")}.joblib'
         save_model(model, model_path)
         
         print(f"Model training completed. RMSE: {rmse:.2f}, R2: {r2:.2f}")
