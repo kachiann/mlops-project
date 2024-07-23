@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/4b210ec3797643edbc28339fbeeb2aea/artifacts
+end_time: 1721733338911
+entry_point_name: ''
+experiment_id: '869075066969205777'
+lifecycle_stage: active
+run_id: 4b210ec3797643edbc28339fbeeb2aea
+run_name: overjoyed-shrew-991
+run_uuid: 4b210ec3797643edbc28339fbeeb2aea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721733329464
+status: 4
+tags: []
+user_id: kachiemenike

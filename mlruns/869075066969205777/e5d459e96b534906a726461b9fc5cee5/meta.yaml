@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/e5d459e96b534906a726461b9fc5cee5/artifacts
+end_time: 1721733484623
+entry_point_name: ''
+experiment_id: '869075066969205777'
+lifecycle_stage: active
+run_id: e5d459e96b534906a726461b9fc5cee5
+run_name: dashing-squirrel-947
+run_uuid: e5d459e96b534906a726461b9fc5cee5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721733475599
+status: 3
+tags: []
+user_id: kachiemenike
