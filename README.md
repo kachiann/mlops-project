@@ -33,6 +33,7 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
 - Trained models are registered in the MLflow Model Registry.
 
 **Workflow Orchestration**:
+
 **Prefect** is used to create and manage the entire ML pipeline.
 The pipeline includes data ingestion, preprocessing, feature engineering, model training, and evaluation steps.
 
