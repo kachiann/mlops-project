@@ -29,12 +29,12 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
 ## Implementation Details
 
 **1. Experiment Tracking and Model Registry**:
-- **MLflow** is used to track experiments, including hyperparameters, metrics, and artifacts.
+- **[Mlflow](https://mlflow.org/)** is used to track experiments, including hyperparameters, metrics, and artifacts.
 - Trained models are registered in the MLflow Model Registry.
 
 **2. Workflow Orchestration**:
 
-**Prefect** is used to create and manage the entire ML pipeline.
+**[Prefect](https://www.prefect.io/)** is used to create and manage the entire ML pipeline.
 The pipeline includes data ingestion, preprocessing, feature engineering, model training, and evaluation steps.
 
 **3. Model Deployment**:
