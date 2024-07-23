@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1721735056790
+current_stage: Production
+description: null
+last_updated_timestamp: 1721735056792
+name: BikeShareModel
+run_id: ecf41d8ac54649669fab319894b4038e
+run_link: null
+source: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/ecf41d8ac54649669fab319894b4038e/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/kachiemenike/My%20Documents/Personal/mlops-project/mlruns/869075066969205777/ecf41d8ac54649669fab319894b4038e/artifacts/model
+user_id: null
+version: 1

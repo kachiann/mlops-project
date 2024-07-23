@@ -64,7 +64,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
     # Start MLflow run
-    with mlflow.start_run():
+    with mlflow.start_run() as run:
         # Train model
         model = train_model(X_train, y_train)
         
@@ -86,9 +86,13 @@ def main():
         model_path = f'/Users/kachiemenike/My Documents/Personal/mlops-project/models/bike_sharing_model_{datetime.now().strftime("%Y%m%d_%H%M%S")}.joblib'
         save_model(model, model_path)
         
+        run_id = run.info.run_id
+
         print(f"Model training completed. RMSE: {rmse:.2f}, R2: {r2:.2f}")
         print(f"Model saved to {model_path}")
-        print(f"Run ID: {mlflow.active_run().info.run_id}")
+        print(f"Run ID: {run_id}")
         print('Done')
+        
+    return run_id
 if __name__ == "__main__":
     main()
