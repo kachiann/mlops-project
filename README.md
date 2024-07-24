@@ -41,6 +41,7 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
 The pipeline includes data ingestion, preprocessing, feature engineering, model training, and evaluation steps.
 
 **3. Model Deployment**:
+In this case, we are containerizing the model using Docker and deploying it as a web service with Flask.
 
 **4. Model Monitoring**:
 
