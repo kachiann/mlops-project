@@ -37,7 +37,7 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
 
 **2. Workflow Orchestration**:
 
-**[Prefect](https://www.prefect.io/)** is used to create and manage the entire ML pipeline.
+**[Prefect](https://www.prefect.io/)** is used to create and manage the entire ML pipeline.![Alt text](images/prefect.png)
 The pipeline includes data ingestion, preprocessing, feature engineering, model training, and evaluation steps.
 
 **3. Model Deployment**:
