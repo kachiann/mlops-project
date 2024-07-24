@@ -1,4 +1,4 @@
-# prefect_pipeline.py
+from prefect import task
 
 import pandas as pd
 import numpy as np
@@ -162,13 +162,6 @@ def bike_sharing_prediction_pipeline():
     register_model(run_id)
     
     print(f"Pipeline completed. Model performance: RMSE = {rmse:.4f}, R2 = {r2:.4f}")
-
+    
 if __name__ == "__main__":
-    deployment = Deployment.build_from_flow(
-        flow=bike_sharing_prediction_pipeline,
-        name="bike-sharing-prediction-pipeline",
-        schedule=(CronSchedule(cron="5 4 1 * *", timezone="UTC")),
-        tags=["final_project"]
-    )
-    deployment.apply()
-    print("Deployment has been created")
+    bike_sharing_prediction_pipeline()
