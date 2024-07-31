@@ -55,6 +55,29 @@ Using Prefect offers several advantages:
 - Logging and observability
 - Notifications
 - Automated workflows requiring no human intervention
+  
+**Usage**: To test the Prefect Flow, run the Python file in the terminal.
+```bash
+python src/ml_pipeline.py
+```
+To run the deployment **locally**, we must build the “Deployment” by providing the file and flow function names.
+```bash
+prefect deployment build src/ml_pipeline.py.py:ml_pipeline -n 'ml_pipeline_bike_share' -a --tag dev
+```
+We will initialize the Prefect agents in a new terminal with the default work pool name.
+```bash
+prefect agent start -p 'default-agent-pool'
+```
+Go to a new terminal and run the deployment
+```bash
+prefect deployment run 'ml-pipeline/ml_pipeleine_bike_share'
+```
+
+To run using **Prefect UI**
+```bash
+prefect server start
+```
+In the Deployment section, you can view the current Deployment along with its activity and tags.
 
 **3. Model Deployment**:
 In this case, we are containerizing the model using Docker and deploying it as a web service with Flask. The `app.py` contains the logic of the program. You can check the folder for all the files needed to create the Docker image.
