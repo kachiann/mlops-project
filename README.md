@@ -40,6 +40,10 @@ This repository has four folders: *scr*, *notebooks*, *models*, and *data*.
 **[Prefect](https://www.prefect.io/)** is used to create and manage the entire ML pipeline. It is a powerful and open-source workflow orchestration tool that lets users design, monitor, and respond to data and machine learning pipelines using Python code. ![Alt text](images/prefect.png)
 The pipeline includes data ingestion, preprocessing, feature engineering, model training, and evaluation steps.
 
+**Prefect Task**
+
+A Prefect Task is a Python function decorated with the `@task` decorator that represents discrete units of work within a Prefect workflow (see code file). We can also customize the task decorator with optional arguments like name, description, tags, cache settings, retries, and more.
+
 **3. Model Deployment**:
 In this case, we are containerizing the model using Docker and deploying it as a web service with Flask. The `app.py` contains the logic of the program. You can check the folder for all the files needed to create the Docker image.
 
