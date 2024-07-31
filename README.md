@@ -47,6 +47,14 @@ A Prefect Task is a Python function decorated with the `@task` decorator that re
 **Prefect Deployments**
 
 Deployments are flows stored on the local server or on the cloud and include important information for orchestrating your workflow remotely, such as scheduling and execution details.
+Using Prefect offers several advantages:
+
+- Monitoring the pipeline
+- Scheduling with CRON
+- Automatic retries on failure
+- Logging and observability
+- Notifications
+- Automated workflows requiring no human intervention
 
 **3. Model Deployment**:
 In this case, we are containerizing the model using Docker and deploying it as a web service with Flask. The `app.py` contains the logic of the program. You can check the folder for all the files needed to create the Docker image.
