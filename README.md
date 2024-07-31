@@ -44,6 +44,10 @@ The pipeline includes data ingestion, preprocessing, feature engineering, model 
 
 A Prefect Task is a Python function decorated with the `@task` decorator that represents discrete units of work within a Prefect workflow (see code file). We can also customize the task decorator with optional arguments like name, description, tags, cache settings, retries, and more.
 
+**Prefect Deployments**
+
+Deployments are flows stored on the local server or on the cloud and include important information for orchestrating your workflow remotely, such as scheduling and execution details.
+
 **3. Model Deployment**:
 In this case, we are containerizing the model using Docker and deploying it as a web service with Flask. The `app.py` contains the logic of the program. You can check the folder for all the files needed to create the Docker image.
 
